@@ -8,23 +8,8 @@ import { Navbar } from './components/Navbar';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Project } from './components/Project';
-// import { ProjectCard } from './components/ProjectCard';
-
-// function App() {
-//   return (
-    
-//     <Fragment>
-//     <Navbar />
-//       <Switch>
-//         <Route path="/" component={Header} /> 
-//         <Route path="/project" component={Project} />
-//         {/* <Route path="/project" component={Project} /> */}
-//       </Switch>
-//     <Footer />
-//     </Fragment>
-    
-//   );
-// }
+import  Contact  from './components/Contact';
+import { Resume } from './components/Resume';
 
 function App() {
   return (
@@ -34,7 +19,8 @@ function App() {
       <Switch>
         <Route path="/" component={Header} exact/> 
         <Route path="/project" component={Project} />
-        {/* <Route path="/project" component={Project} /> */}
+        <Route path="/contact" component={Contact} />
+        <Route path="/resume" component={Resume} />
       </Switch>
     <Footer />
     </Fragment>

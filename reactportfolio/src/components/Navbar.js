@@ -12,10 +12,10 @@ export const Navbar = () => {
                         <a href="/project">Portfolio</a>
                     </li>
                     <li>
-                        <a href="/#">Contact</a>
+                        <a href="/contact">Contact</a>
                     </li>
                     <li>
-                        <a href="/#" id="openup">Resume</a>
+                        <a href="/resume" id="openup">Resume</a>
                     </li>
                 </ul>
                 

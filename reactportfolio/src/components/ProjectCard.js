@@ -4,19 +4,17 @@ export const ProjectCard = (props) => {
     return (
         <Fragment>
             <figure>
-                <img className="apppic" src={props.projectImg} width="320px" alt="placeholder"></img>
+                <img className="apppic" src={props.projectImg} width="320px" height="271px" alt="placeholder"></img>
             </figure>
             <div className="appdesc">
-                <h2 className="apph2">
+                <h3 className="apph2">
                     {props.project}
-                </h2>
+                </h3>
                 <p>
                     {props.desc}
                 </p>
-            
-           
-                <button className="deploy"> {props.key} Deployed Link</button>
-                <button className="github"> {props.key} Github Link</button>
+                <a href={props.deployedLink} target="_blank" rel="noreferrer" className="link">Deployed Link</a>
+                <a href={props.github} target="_blank" rel="noreferrer" className="link"> Github Link</a>
             </div>
             
         </Fragment>
